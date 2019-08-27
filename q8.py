@@ -13,4 +13,9 @@
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
 
+user_sequence=input().split(',')
+user_sequence.sort()
+#for a in user_sequence:
+#    print(a, end=", ")
+print(','.join(user_sequence))
 
