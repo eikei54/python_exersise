@@ -7,3 +7,15 @@
 #
 #Hints:
 #In case of input data being supplied to the question, it should be assumed to be a console input.
+
+value=[]
+items = input().split(',')
+
+for x in items:
+    x_ = int(x)
+    if ((x_ >= 1000) and (x_ <=3000)):
+        value.append(x)
+
+print(','.join(value))
+
+

@@ -13,10 +13,11 @@
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 #
 
-num_array = input().split(',')
-print(num_array)
+value = []
+items=[x for x in input().split(',')]
+for p in items:
+    intp = int(p, 2)
+    if not intp%5:
+        value.append(p)
 
-for num_ in num_array:
-    num_dec_ = int(num_, 2)
-    if(num_dec_ % 5 == 0):
-        print(num_)
+print(','.join(value))
