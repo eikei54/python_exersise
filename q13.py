@@ -13,6 +13,16 @@
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
 string_ = input()
+d={"LETTERS":0, "DIGITS":0}
 
+#for car_ in string_[:]:
+for car_ in string_:
+    #print(car_, type(car_))
+    if car_.isalpha():
+        d["LETTERS"] += 1
+    elif car_.isdigit():
+        d["DIGITS"] += 1
+    else:
+        pass
 
-
+print("LETTERS:",d["LETTERS"],"DIGITS:",d["DIGITS"] )
