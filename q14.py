@@ -12,4 +12,18 @@
 #Hints:
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
+d={"UP":0, "LO":0}
+s=input()
+for c in s:
+    if c.isupper():
+        d["UP"] += 1
+    elif c.islower():
+        d["LO"] += 1
+    else:
+        pass
+print(d["UP"], d["LO"])
+
+
+
+
 

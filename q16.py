@@ -9,5 +9,15 @@
 #Then, the output should be:
 #1,3,5,7,9
 
+#Hints:
+#In case of input data being supplied to the question, it should be assumed to be a console input.
 
-
+num_ = input().split(',')
+new_ = []
+for i in num_:
+    i_ = int(i)
+    print(i_)
+    if i_ % 2 !=0:
+        new_.append(i)
+#print(new_)
+print(",".join(new_))
