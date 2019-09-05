@@ -1,4 +1,3 @@
-j
 #Question 17
 #Level 2
 #
@@ -20,4 +19,16 @@ j
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 #
 
-
+data_=input().split(' ')
+amount_ = 0
+while True:
+    data_=input().split(' ')
+    if  not data_:
+        break
+    if data_[0] == 'D':
+        amount_ += int(data_[1])
+    elif data_[0] == 'W':
+        amount_ -= int(data_[1])
+    else:
+        pass
+print(amount_)

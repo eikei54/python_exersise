@@ -22,3 +22,25 @@
 #Hints:
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
+pos_x = 0
+pos_y = 0
+while True:
+    s = input()
+    if not s:
+        break
+    pos = s.split(' ')
+    pos_type = pos[0]
+    val = int(pos[1])
+    if pos_type == 'UP':
+        pos_x += val
+    elif pos_type == 'DOWN':
+        pos_x -= val
+    elif pos_type == 'RIGHT':
+        pos_y += val
+    elif pos_type == 'LEFT':
+        pos_y -= val
+    else:
+        pass
+pos_fin = (str(pos_x), str(pos_y))
+print(','.join(pos_fin))
+
