@@ -22,6 +22,8 @@
 #Hints:
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
+import math
+
 pos_x = 0
 pos_y = 0
 while True:
@@ -41,6 +43,7 @@ while True:
         pos_y -= val
     else:
         pass
-pos_fin = (str(pos_x), str(pos_y))
-print(','.join(pos_fin))
+#pos_fin = (str(pos_x), str(pos_y))
+#print(','.join(pos_fin))
 
+print(int(round(math.sqrt(pos_y**2+pos_x**2))))
