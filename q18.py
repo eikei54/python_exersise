@@ -21,3 +21,39 @@
 #Hints:
 #In case of input data being supplied to the question, it should be assumed to be a console input.
 
+import re
+
+MAX_LEN = int(12)
+MIN_LEN = int(6)
+
+item = [x for x in input().split(',')]
+password = []
+#print(item)
+
+for _p in item:
+    if len(_p) > MAX_LEN or len(_p) < MIN_LEN:
+      #print(_p, "length is not match")
+        continue
+    else:
+        pass
+    if not re.match(".+[a-z]+", _p):
+        #print(_p, "not include [a-z]")
+        continue
+    elif not re.match(".+[0-9]+", _p):
+        #print(_p, "not include [0-9]")
+        continue
+    elif not re.match(".+[A-Z]+", _p):
+        #print(_p, "not include [A-Z]")
+        continue
+    elif not re.match(".+[$#@]+", _p):
+        #print(_p, "not include [$#@]")
+        continue
+    else:
+        pass
+
+    password.append(_p)
+
+
+print(','.join(password))
+
+
