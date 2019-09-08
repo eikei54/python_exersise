@@ -1,0 +1,13 @@
+def putNumbers(n):
+    i = 0
+    while i<n:
+        j=i
+        i=i+1
+        if j%7==0:
+            yield j
+
+#for i in reversed(range(100)):
+#    #print(i)
+#    print(putNumbers(i))
+print(list(putNumbers(100)))
+

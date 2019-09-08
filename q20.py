@@ -7,3 +7,9 @@
 #
 #Hints:
 #Consider use yield
+
+
+class DispSevenDiv():
+    def __init__(object):
+        self.s = ""
+

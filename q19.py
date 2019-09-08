@@ -23,4 +23,14 @@
 #Solutions:
 #from operator import itemgetter, attrgetter
 
+data_list=[]
+while True:
+    s=input()
+    if not s:
+        break
+    user_data=(x for x in s.split(','))
+    data_list.append(user_data)
+
+for x in data_list:
+    print(x, sep=',')
 
